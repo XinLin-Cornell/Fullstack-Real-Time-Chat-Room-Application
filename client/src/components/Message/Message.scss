@@ -1,0 +1,37 @@
+.Message {
+  display: block;
+  background-color: #B2B1B9;
+  margin-right: 10px;
+
+  margin: 10px auto;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,.2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  clear:both;
+
+  &.me {
+    color: rgb(31, 28, 70);
+    float: right;
+  }
+}
+
+.button {
+  border-width: 0px;
+  border-style: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.vote-icon {
+  // margin-left: 20px;
+  width: 15px; 
+  height: 15px; 
+  // margin-left: 10px;
+  border: none;
+  border-width: 0px;
+  border-style: none;
+  background: none;
+  padding: 0;
+}
+

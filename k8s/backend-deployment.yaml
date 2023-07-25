@@ -1,0 +1,20 @@
+# backend-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatroom-backend
+  template:
+    metadata:
+      labels:
+        app: chatroom-backend
+    spec:
+      containers:
+        - name: chatroom-backend
+          image: chatroom-backend
+          ports:
+            - containerPort: 9000
